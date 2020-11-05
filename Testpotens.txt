@@ -1,0 +1,52 @@
+package poten;
+
+import java.util.Scanner;
+public class Testpotens
+{
+    public static void main(String[] args) 
+    {
+        int n,tsum=0,k=0,p=0, sum = 0;
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter no. of elements you want in array:");
+        n = s.nextInt();
+        int a[] = new int[n];
+        System.out.println("Enter all the elements:");
+        for(int i = 0; i < n; i++)
+        {
+            a[i] = s.nextInt();
+            
+        }
+	System.out.println("Enter target sum:");
+	tsum = s.nextInt();	
+	for(int i = 0; i < n; i++)
+	{
+		for(int j=i+1;j<n;j++)
+		{
+			
+			
+				k=j;
+				for(int d=j+1;d<n;d++)
+				{
+					
+					
+						p=d;
+						if(a[i]!=a[k] && a[i]!=a[p] && a[k]!=a[p])
+						{
+							sum=a[i]+a[k]+a[p];
+							if(sum==tsum)
+							{
+							
+								System.out.println(a[i]+","+a[k]+","+a[p]);
+							}
+
+							
+
+					
+				}
+
+			}
+		}
+	}
+        
+    }
+}

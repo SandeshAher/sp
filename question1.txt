@@ -1,0 +1,17 @@
+Requirements & Goals
+Global and fast deployment.
+System takes the code, converts into binary and deploys the code globally.
+System should save the historical data of all the builds and the deployments.
+
+Capacity Estimation and Constraints
+System should be extreamly fast with a cap of 30mins for the entire deployment.
+Due to large codebase binaries can take upto 10GB storage.
+The system is used extensively and can have 1000 deployments/day.
+
+High Level System Design
+We can think of this system to be consisting 2 parts at a high level:
+Building the binary
+Deploying the binary
+
+I AGREE
+IMPORTANCE OF Distributed Code Deployment System
